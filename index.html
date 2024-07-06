@@ -20,13 +20,12 @@
 
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#">Works</a>
+            <a href="https://github.com/LeonardoSoares-b">Github</a>
           </li>
           <li class="nav-item">
-            <a href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">Contact </a>
+            <a href="https://www.linkedin.com/in/leonardo-soares-barbosa-/"
+              >Linkedin</a
+            >
           </li>
         </ul>
         <div class="hamburger-menu">
@@ -49,25 +48,35 @@
       <section id="banner">
         <div class="banner-content">
           <h1 class="banner-content-title">
-            Hi, I am Leonardo, <br />
-            Developer
+            Olá sou o Leonardo, <br />
+            Desenvolvedor
           </h1>
           <p class="banner-content-subtitle">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
-            nobis, autem, molestias ab officiis fuga cupiditate aliquam deleniti
-            exercitationem aperiam ad sed, quisquam sit minus atque assumenda
-            distinctio asperiores laudantium. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Molestiae sed debitis nemo. Ratione
-            explicabo quidem ut dolores voluptas libero ex adipisci, beatae
-            exercitationem neque asperiores dicta rerum minima, saepe sed.
+            Estudante de Engenharia de Computação com experiência em
+            desenvolvimento de software e ensino de matemática. Organizador de
+            eventos e coordenador de atividades educativas. Buscando
+            oportunidades para aplicar e expandir minhas habilidades em um
+            ambiente de tecnologia inovador.
           </p>
-          <button class="banner-content-button">Download Resume</button>
+          <button class="banner-content-button" onclick="downloadResume()">
+            Download Resume
+          </button>
         </div>
         <img
           src="https://avatars.githubusercontent.com/u/82275509?v=4"
           alt="Leonardo Soares Barbosa"
           class="banner-image"
         />
+        <script>
+          function downloadResume() {
+            const link = document.createElement("a");
+            link.href = "CurriculoLeonardoSB.pdf"; // Substitua pelo caminho do seu PDF
+            link.download = "resume.pdf"; // Substitua pelo nome do arquivo que deseja
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }
+        </script>
       </section>
       <section id="posts">
         <div class="posts-content">
@@ -78,24 +87,26 @@
 
           <div class="post-cards">
             <div class="post-card">
-              <h3>Making a design system from scratch</h3>
-              <span>12 Feb 2021</span>
+              <h3>Projeto página para uma rede de petshops</h3>
+              <span>Julho 2024</span>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                voluptate sit officia, voluptatibus in aliquam cum ipsum sequi
-                saepe temporibus! Corporis nihil asperiores perspiciatis
-                possimus commodi reiciendis dolorem, rem odio.
+                Criação de uma página em HTML e CSS destinada a uma rede de
+                petshops, tendo como ponto principal a possibilidade de
+                cadastrar ou acessar uma entidade na rede
               </p>
             </div>
 
             <div class="post-card">
-              <h3>Creating pixel perfect icons in</h3>
-              <span>12 Feb 2021</span>
+              <h3>Trabalho em Grafos</h3>
+              <span>Dezembro 2023</span>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                voluptate sit officia, voluptatibus in aliquam cum ipsum sequi
-                saepe temporibus! Corporis nihil asperiores perspiciatis
-                possimus commodi reiciendis dolorem, rem odio.
+                Aplicar o algoritmo de busca em largura para identificar um
+                possível caminho entre o equipamento (nó/pixel vermelho) e a
+                área de manutenção (qualquer nó/pixel verde). Essa resposta deve
+                ser exibida como uma sequência de passos de deslocamento até
+                atingir a área de manutenção. Caso não haja caminho, seu
+                programa deve informar que não é possível deslocar esse
+                equipamento.
               </p>
             </div>
           </div>
